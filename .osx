@@ -185,10 +185,10 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en"
-defaults write NSGlobalDomain AppleLocale -string "en_us@currency=USD"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
+#defaults write NSGlobalDomain AppleLanguages -array "en"
+#defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
+#defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+#defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 #sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
@@ -503,8 +503,8 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 # Disable inline attachments (just show the icons)
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
-# Disable automatic spell checking
-#defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
+# enable automatic spell checking
+defaults write com.apple.mail SpellCheckingBehavior -string "SpellCheckingEnabled"
 
 ###############################################################################
 # Spotlight                                                                   #
@@ -689,8 +689,8 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Disable smart quotes as it’s annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
-# Disable continuous spell checking
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
+# enable continuous spell checking
+defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool true
 
 ###############################################################################
 # Google Chrome & Google Chrome Canary                                        #
