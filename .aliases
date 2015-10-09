@@ -7,7 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Documents/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
@@ -140,3 +140,15 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+
+########################    MINE   #################
+
+# Server commamandd
+alias apacheRestart='sudo apachectl restart'
+alias mysqlstart='mysql.server start'
+
+
+# COMMANDs with color
+alias grep='grep --color=auto'
+alias tree='tree -C'
