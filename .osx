@@ -194,7 +194,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 #sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
 
 #  enable auto-correct
-# defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
