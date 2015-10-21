@@ -502,7 +502,7 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 # enable automatic spell checking
-defaults write com.apple.mail SpellCheckingBehavior -string "SpellCheckingEnabled"
+defaults write com.apple.mail SpellCheckingBehavior -string "InlineSpellCheckingEnabled"
 
 ###############################################################################
 # Spotlight                                                                   #
@@ -690,7 +690,7 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # enable continuous spell checking
 #defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool true
 
-###############################################################################
+#∏git##############################################################################
 # Google Chrome & Google Chrome Canary                                        #
 ###############################################################################
 
