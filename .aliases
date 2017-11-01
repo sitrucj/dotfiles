@@ -153,3 +153,6 @@ alias mysqlstart='mysql.server start'
 # COMMANDs with color
 alias grep='grep --color=auto'
 alias tree='tree -C'
+
+# Digital Ocean ssh
+alias docurtiscollard.ca='ssh -i id_rsa_digitalOceanWebsite 'root@159.203.7.143''
